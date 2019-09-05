@@ -7,7 +7,7 @@
 		})
 		.route('/blog', 'views/blog.html', 'blog', function(){
 			//spa.getCurrentControl().loadPost();
-			createProducts();
+			//createPosts();
 		});
 
 })(window,document);
@@ -18,10 +18,8 @@
 // Generating content based on the template
 var template = "<div class='prod'>\n\
 					<div class='con1'>\n\
+					<h3>INFO</h3>\n\
 						<img class='image' src='img/placeholder.png' data-src='SLUG' alt='NAME'>\n\
-					</div>\n\
-					<div class='info'>\n\
-						<p>INFO</p>\n\
 					</div>\n\
 				</div>";
 
@@ -85,16 +83,6 @@ function render(){
 			loadImages(img);
 		});
 	}
-
-	let show = document.querySelectorAll(".info");
-	show.forEach(el=>{
-		// Se usa una funcion anonima por que no afecta al this ya que la funcion flecha(=>) si lo hace
-		el.onclick = function(e) { 
-		this.classList.toggle("infomas");
-		this.parentElement.classList.toggle("iz");
-		this.firstElementChild.classList.toggle("dat");
-		};
-	});
 
 }
 

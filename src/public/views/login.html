@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#deebe1">
+    <link rel="shortcut icon" href="../img/natural-love.ico">
+    <link rel="stylesheet" href="../bridge.css">
+    <title>Login CMS Natural Love</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'nunito';
+            background: url(../img/bg_login.png) no-repeat center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+    
+
+    /*
+        https://www.chromium.org/developers/design-documents/create-amazing-password-forms
+    */
+    
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form action="" class="login-form">
+            <div class="text-box">
+                <label for="user"></label>
+                <input type="text" id="user" name="user" value="" placeholder="Username" autocomplete="username">
+                <div class="under"></div>
+            </div>
+        
+            <div class="text-box">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" value="" placeholder="Password" autocomplete='current-password'>
+                <div class="under"></div>
+            </div>
+            <input type="button" class="btn" value="Login">
+        </form>
+    </div>
+</body>
+</html>
